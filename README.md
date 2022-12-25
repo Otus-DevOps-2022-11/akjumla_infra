@@ -13,4 +13,5 @@ ssh -J username@bastion username@someinternalhost
 
         ProxyJump appuser@51.250.82.95
 
-bastion_IP = 51.250.82.95 someinternalhost_IP = 10.128.0.9
+bastion_IP = 51.250.82.95
+someinternalhost_IP = 10.128.0.9
