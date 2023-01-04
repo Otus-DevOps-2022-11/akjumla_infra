@@ -6,8 +6,6 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongod
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 sleep 20
-#sudo systemctl daemon-reload
 sudo systemctl enable mongod
 sudo systemctl start mongod
-#sudo systemctl status mongod
 sudo ufw disable
