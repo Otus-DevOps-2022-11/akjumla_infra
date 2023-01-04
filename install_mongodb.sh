@@ -9,7 +9,12 @@ echo "Check mongod status"
 sudo systemctl status mongod
 echo "Start mongod"
 sudo systemctl start mongod
+mongoStatus=$(sudo systemctl status mongod)
 echo "Check mongod status again"
 sudo systemctl status mongod
+if [$mongoStatus = "Failed to connect to bus: No such file or directory"]
+then
+sudo systemctl start mongodb.service
+fi
 echo "Add mongod to autostart"
 sudo systemctl enable mongod
