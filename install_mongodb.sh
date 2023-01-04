@@ -10,6 +10,7 @@ sudo systemctl status mongod
 echo "Start mongod"
 sudo systemctl start mongod
 echo "Check mongod status again"
-sudo systemctl status mongod
+sudo rm -rf /var/lib/mongodb/mongod.lock
+sudo service mongodb restart
 echo "Add mongod to autostart"
 sudo systemctl enable mongod
