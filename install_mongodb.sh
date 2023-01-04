@@ -8,8 +8,8 @@ sudo apt-get install -y mongodb-org
 echo "Check mongod status"
 sudo systemctl status mongod
 echo "Start mongod"
-sudo systemctl start mongod
+sudo service mongod start
 echo "Check mongod status again"
-sudo mongod --fork --config /etc/mongod.conf
+sudo service mongod status
 echo "Add mongod to autostart"
 sudo systemctl enable mongod
