@@ -1,0 +1,8 @@
+{
+	"key_file": "key.json",
+	"image_family": "reddit-base",
+    "source_image_family": "ubuntu-1604-lts",
+	"disk_name": "reddit-base",
+	"disk_size_gb": "50",
+	"folder": "b1***************vn"
+}
