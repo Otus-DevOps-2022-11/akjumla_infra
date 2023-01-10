@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-sudo mkdir /var/log/journal
-sudo systemd-tmpfiles --create --prefix /var/log/journal
-sudo systemctl restart systemd-journald
-
 sudo apt update
 echo "sleep 30 sec for install updates"; sleep 30;
 sudo apt-get install apt-transport-https ca-certificates
