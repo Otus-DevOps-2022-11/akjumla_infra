@@ -24,3 +24,21 @@ someinternalhost_IP = 10.128.0.9
 
 testapp_IP = 51.250.77.217
 testapp_port = 9292
+
+# HW-07
+
+## Create Packer templates
+
+- Создан ubuntu16.json файл с шаблонам
+- Создан immutable.json файл с полным образом
+- Создан файл variables.json для параметризации шаблонов
+- Создан образ на основе ubuntu16.json
+- Создан образ на основе immutable.json
+- Исправлена ошибка в примере файла ubuntu16.json, добавлена недостающая опция use_ipv4_nat = true
+
+Валидация шаблона
+`packer validate  -var-file variables.json immutable.json`
+
+Создание шаблона
+`packer build  -var-file variables.json immutable.json `
+
