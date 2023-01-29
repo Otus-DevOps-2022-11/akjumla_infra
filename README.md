@@ -42,3 +42,15 @@ testapp_port = 9292
 Создание шаблона
 `packer build  -var-file variables.json immutable.json `
 
+
+# HW-08
+
+## Terraform 1
+
+- Установлен и настроен terraform и провайдер yandex. Версия terraform 0.12.8,  provider.yandex v0.56.0
+- Добавлено описание инстанса redit-app
+- Добавлены provisioner для деплоя и запуска приложения
+- Добалены выводы переменных внешних ip адресов
+- Добавлен connection ssh с подстановкой приватного ключа
+- Добавлена переменная count для создания нескольких инстансов redit-app и обхода проблемы дублирования кода.
+
